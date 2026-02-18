@@ -9,12 +9,18 @@
 <body>
 
 <header>
-  <h1>ShopX</h1>
-  <div id="cart">
-    🛒
-    <span id="count">0</span>
-  </div>  
-</header>
+  <h1 class="logo">ShopX</h1>
+  
+  <div class="header-actions">
+    <div id="cart">
+      <div class="cart-count" id="count">0</div>
+      <div class="cart-icon">🛒</div>
+      <div class="cart-text">Cart</div>
+    </div>
+  
+    <button id="theme-toggle">🌙</button>
+  </div>
+</header>  
 
 <div class="controls">
     <input type="text" id="search" placeholder="Search products...">
@@ -34,6 +40,7 @@
       <img src="product images/headphone-black.jpeg" alt="Headphones Black">
       <h3>Headphones (Black)</h3>
       <p>₹999</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -41,6 +48,7 @@
       <img src="product images/headphone-white.jpeg" alt="Headphones White">
       <h3>Headphones (White)</h3>
       <p>₹1099</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -48,6 +56,7 @@
       <img src="product images/headphone-pro.jpeg" alt="Headphones Pro">
       <h3>Headphones Pro</h3>
       <p>₹1499</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -56,6 +65,7 @@
       <img src="product images/running-shoes.jpeg" alt="Running Shoes">
       <h3>Running Shoes</h3>
       <p>₹1499</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -63,6 +73,7 @@
       <img src="product images/casual-shoes.jpeg" alt="Casual Shoes">
       <h3>Casual Shoes</h3>
       <p>₹1299</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -70,6 +81,7 @@
       <img src="product images/sports-shoes.jpeg" alt="Sports Shoes">
       <h3>Sports Shoes</h3>
       <p>₹1699</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -78,6 +90,7 @@
       <img src="product images/smart-watch.jpeg" alt="Smart Watch Basic">
       <h3>Smart Watch Basic</h3>
       <p>₹1999</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -86,6 +99,7 @@
       <img src="product images/smart-phone-x.jpeg" alt="Smart Phone X">
       <h3>Smart Phone X</h3>
       <p>₹8999</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -93,6 +107,7 @@
       <img src="product images/smart-phone-pro.jpeg" alt="Smart Phone Pro">
       <h3>Smart Phone Pro</h3>
       <p>₹12999</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -100,6 +115,7 @@
       <img src="product images/smart-phone-lite.jpeg" alt="Smart Phone Lite">
       <h3>Smart Phone Lite</h3>
       <p>₹6999</p>
+      <span class="wishlist-btn">♡</span>
       <button>Add to Cart</button>
     </div>
   
@@ -130,7 +146,12 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="cart.js"></script>
+<script src="theme.js"></script>
+<script src="wishlist.js"></script>
+<script src="filter.js"></script>
+<script src="chatbot.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
