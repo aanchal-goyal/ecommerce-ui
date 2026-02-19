@@ -18,5 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         updateCart(); // now works ✅
       });
     });
-  });
+
+    document.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      header.classList.toggle("scrolled", window.scrollY > 10);
+    });    
+});
   
