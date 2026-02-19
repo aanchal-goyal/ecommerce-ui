@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
   
+    const wishlistCount = document.getElementById("wishlist-count");
+
+    function updateWishlistCount() {
+      wishlistCount.innerText = wishlist.length;
+    }
+
     const buttons = document.querySelectorAll(".wishlist-btn");
   
     buttons.forEach((btn, index) => {
@@ -21,7 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
   
         localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+        updateWishlistCount();
       });
     });
+
+    updateWishlistCount();
 });
-  
+ 
